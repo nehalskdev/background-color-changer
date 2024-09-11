@@ -99,6 +99,9 @@ html {
 }
 
 @media (max-width: 480px) {
+  body {
+    height: 100vh;
+  }
   .center-button {
     padding: 12px 30px;
     font-size: 16px;
