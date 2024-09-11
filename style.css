@@ -99,7 +99,7 @@ html {
 }
 
 @media (max-width: 480px) {
-  body {
+  .center {
     height: 100vh;
   }
   .center-button {
