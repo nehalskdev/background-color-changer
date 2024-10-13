@@ -87,13 +87,12 @@ body {
 
 .center-button {
   padding: 15px 40px;
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 
 .color-box {
-  width: 180px;
-  font-size: 16px;
-  margin-top: 20px;
+  width: 13rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 480px) {
