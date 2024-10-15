@@ -10,7 +10,7 @@ html {
   width: 100vw;
   font-family: "Arial", sans-serif;
   background-color: #f0f0f0;
-   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -72,40 +72,39 @@ html {
 }
 
 @media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
 
-body {
-  flex-direction: column;
-}
-
-.center-button {
-  padding: 15px 40px;
-  font-size: 1.5rem;
-}
-
-.color-box {
-  width: 13rem;
-  font-size: 1.2rem;
-}
-
-@media (max-width: 480px) {
   .center-button {
-    padding: 12px 30px;
-    font-size: 16px;
+    padding: 15px 40px;
+    font-size: 1.5rem;
   }
 
   .color-box {
-    width: 160px;
-    font-size: 14px;
+    width: 13rem;
+    font-size: 1.2rem;
   }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateX(-5rem);
+
+  @media (max-width: 480px) {
+    .center-button {
+      padding: 12px 30px;
+      font-size: 16px;
+    }
+
+    .color-box {
+      width: 160px;
+      font-size: 14px;
+    }
   }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-5rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
-}
 }
