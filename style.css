@@ -15,18 +15,9 @@ html {
   align-items: center;
   gap: 1rem;
 }
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column-reverse;
-  height: 100vh;
-}
-
 .center-button {
   padding: 20px 50px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   background: linear-gradient(135deg, #4e54c8, #8f94fb);
   color: white;
@@ -37,7 +28,6 @@ html {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  margin: 1rem;
   animation: fadeIn 2s forwards ease;
 }
 
@@ -82,10 +72,7 @@ html {
 }
 
 @media (max-width: 768px) {
-  .center {
-    padding: 30px;
-  }
-}
+
 body {
   flex-direction: column;
 }
@@ -101,9 +88,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .center {
-    height: 100vh;
-  }
   .center-button {
     padding: 12px 30px;
     font-size: 16px;
@@ -112,7 +96,6 @@ body {
   .color-box {
     width: 160px;
     font-size: 14px;
-    margin-top: 15px;
   }
 }
 @keyframes fadeIn {
@@ -124,4 +107,5 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
+}
 }
